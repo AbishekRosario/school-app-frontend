@@ -1,0 +1,18 @@
+/* Hide default arrow in select (only in custom dropdowns) */
+.form-select {
+  appearance: none; /* For most browsers */
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
+  background-image: none !important; /* Remove any default arrow image */
+  padding-right: 2rem; /* Add space for custom icon */
+}
+
+/* Custom arrow container */
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+}

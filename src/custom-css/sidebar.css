@@ -1,0 +1,214 @@
+.sidebar {
+  position: relative;
+  width: 80px;
+  transition: width 0.3s ease;
+  height: 100vh;
+  padding-top: 10px;
+  overflow: hidden;
+  background-color: #1f9797 !important; /* Use background-color instead of background */
+  color: white;
+  z-index: 1000;
+}
+
+/* Force the color on all possible states */
+.sidebar,
+.sidebar.expanded,
+.sidebar.collapsed {
+  background-color: #1f9797 !important;
+}
+.sidebar.expanded {
+  width: 300px;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.expanded .toggle-btn {
+  left: 210px;
+}
+
+.sidebar-title {
+  color: white;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.nav-link {
+  color: #cfd8dc;
+  /* color: white; */
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.nav-link.active {
+  background: #014450de; /* Dodger blue */
+  color: #000000; /* Black text for contrast */
+  font-weight: bold;
+}
+
+/* .nav-link:hover {
+  background: #3498db;
+} */
+
+.nav-link:hover {
+   background: rgba(255, 255, 255, 0.1);
+  /* background: rgba(30, 144, 255, 0.2); */
+  /* background: rgba(50, 50, 50, 0.5); */
+  /* background: rgba(128, 0, 128, 0.3); */
+  color: #ffffff; 
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.submenu {
+  list-style: none;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.submenu li {
+  display: block;
+  width: 100%;
+}
+
+.submenu li a {
+  color: #ddd;
+  text-decoration: none !important;
+  font-size: 14px;
+}
+
+.submenu li a:hover {
+  text-decoration: underline;
+}
+
+.submenu .active {
+  background: #014450de;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none !important;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  /* Adjust as needed */
+}
+
+.arrow-icon {
+  margin-left: auto;  /* Pushes the arrow to the right */
+  display: flex;
+  align-items: center;
+}
+
+.submenu {
+  display: block !important;
+}
+
+
+.tooltip-inner {
+  background-color: #ecf0f1 !important; /* Change tooltip background color */
+  color: rgb(44, 86, 134) !important; /* Change tooltip text color */
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+/* Force tooltip arrow color */
+.tooltip.show {
+  opacity: 1 !important; /* Ensure tooltip is fully visible */
+}
+
+/* Arrow Customization for Different Directions */
+.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: #ecf0f1 !important;
+}
+
+.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: #ecf0f1 !important;
+}
+
+.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: #ecf0f1 !important;
+}
+
+.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: #ecf0f1 !important;
+}
+
+/* Ensure Arrow is Visible */
+.tooltip .tooltip-arrow {
+  width: 8px !important;
+  height: 8px !important;
+  display: block !important;
+}
+
+.tooltip {
+  position: fixed !important; /* Prevents tooltip from affecting page scroll */
+  z-index: 9999 !important; /* Ensures tooltip stays on top */
+  pointer-events: none !important; /* Prevents tooltip from blocking clicks */
+}
+
+.golden-icon {
+  color: #FFDF20;
+  font-size: 1.5rem;
+  transition: transform 0.4s ease;
+}
+
+.golden-btn {
+  background-color: #fff;
+  border: 1px solid #FFDF20;
+  box-shadow: 0 0 12px rgba(255, 223, 32, 0.6);
+  border-radius: 50%;
+  padding: 0.6rem !important
+}
+
+.golden-btn:hover {
+  background-color: #fffbe5;
+}
+
+.rotate .golden-icon {
+  transform: rotate(180deg);
+}
+
+.montfort-title {
+  font-family: 'Georgia', serif;
+  color: #FFDF20 !important;
+  background-color: transparent;
+  text-shadow: 1px 1px 2px rgba(153, 8, 8, 0.15);
+  font-weight: bold;
+  margin: 0;
+}
+
+.custom-margin-top {
+  margin-top: -10px;
+}
+
