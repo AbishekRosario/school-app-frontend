@@ -297,22 +297,21 @@ const Sidebar = () => {
 
             {submenuOpen === "config" && expanded && (
               <ul className="submenu ps-3 scrollable-masters">
-                {renderNavItem("/MasterCity", <FaBuilding />, "Cities")}
+                {renderNavItem("/SectionList", <FaMapMarkedAlt />, "Section")}
+                {renderNavItem("/MasterStd", <FaBook />, "Standard")}
                 {renderNavItem("/MasterGender", <FaVenusMars />, "Gender")}
                 {renderNavItem("/MasterBloodGroup", <FaTint />, "Blood Groups")}
+                {renderNavItem("/MasterSubjectSpecialization", <FaChalkboardTeacher />, "Subject Specialization")}
                 {renderNavItem("/MasterMotherOccupation", <FaFemale />, "Mother Occupation")}
                 {renderNavItem("/MasterFatherOccupation", <FaMale />, "Father Occupation")}
-
-                {renderNavItem("/MasterStd", <FaBook  />, "Standard")}
-                {renderNavItem("/MasterSubjectSpecialization", <FaChalkboardTeacher  />, "Subject Specialization")}
-                {renderNavItem("/MasterQualification", <FaGraduationCap  />, "Qualification")}
-                {renderNavItem("/MasterNationality", <FaFlag />, "Nationality")}
-                {renderNavItem("/MasterState", <FaMapMarkedAlt />, "State")}
-                {renderNavItem("/MasterCountry", <FaGlobe />, "Country")}
-                {renderNavItem("/MasterCountry", <FaGlobe />, "Country")}
-                 {renderNavItem("/MasterState", <FaMapMarkedAlt />, "State")}
-                {renderNavItem("/MasterCountry", <FaGlobe />, "Country")}
-                {renderNavItem("/MasterCountry", <FaGlobe />, "Country")}
+                {renderNavItem("/MasterQualification", <FaGraduationCap />, "Qualification")}
+                {renderNavItem("/MasterCity", <FaBuilding />, "Cities")}
+                {renderNavItem("/ReligionList", <FaFlag />, "ReligionList")}
+                {renderNavItem("/CasteList", <FaGlobe />, "CasteList")}
+                {renderNavItem("/DocumentTypeList", <FaGlobe />, "DocumentTypeList")}
+                {renderNavItem("/StatusList", <FaMapMarkedAlt />, "StatusList")}
+                {renderNavItem("/DocumentTypeList", <FaGlobe />, "DocumentTypeList")}
+                {renderNavItem("/StatusList", <FaMapMarkedAlt />, "StatusList")}
               </ul>
             )}
           </li>

@@ -21,6 +21,13 @@ import MasterFatherOccupation from './Masterpages/MasterFatherOccupation';
 import MasterStd from './Masterpages/MasterStd';
 import MasterSubjectSpecialization from './Masterpages/MasterSubjectSpecialization';
 import MasterQualification from './Masterpages/MasterQualification';
+import SectionList from './MasterComponent/Masters_Students/SectionList';
+import ReligionList from './MasterComponent/Masters_Students/ReligionList';
+import CasteList from './MasterComponent/Masters_Students/CasteList';
+import DocumentTypeList from './MasterComponent/Masters_Students/DocumentTypeList';
+import StatusList from './MasterComponent/Masters_Students/StatusList';
+
+
 import Dashboard from './componets/Dashboardscomponets/Dashboard'
 
 import NotAuthorized from './componets/Dashboardscomponets/NotAuthorized';
@@ -49,6 +56,18 @@ const AppRoutes = () => (
         <Route path="/MasterStd" element={<MasterStd />} />
         <Route path="/MasterSubjectSpecialization" element={<MasterSubjectSpecialization />} />
         <Route path="/MasterQualification" element={<MasterQualification />} />
+        <Route path="/SectionList" element={<SectionList />} />
+        <Route path="/ReligionList" element={<ReligionList />} />
+        <Route path="/CasteList" element={<CasteList />} />
+        <Route path="/DocumentTypeList" element={<DocumentTypeList />} />
+        <Route path="/StatusList" element={<StatusList />} />
+
+
+
+
+
+
+
 
         <Route element={<RoleRoute allowedRoles={['student']} />}>
           <Route path="/student/dashboard" element={<StudentDashboard />} />
