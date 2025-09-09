@@ -7,7 +7,7 @@ import {
   FaPlay, FaQuestionCircle, FaSignOutAlt, FaChalkboardTeacher,
   FaUserTie, FaCalendarAlt, FaClipboardList, FaBus, FaMoneyBillWave,
   FaLaptop, FaBookOpen, FaUserFriends, FaChartBar, FaBell, FaBuilding, FaVenusMars,
-  FaFileInvoiceDollar, FaTint, FaFemale, FaMale, FaPray, FaFlag, FaMapMarkedAlt, FaGlobe, FaGraduationCap
+  FaFileInvoiceDollar, FaTint, FaFemale, FaMale, FaPray, FaFlag, FaMapMarkedAlt, FaGlobe, FaGraduationCap,
 } from "react-icons/fa";
 
 import { Modal, Button, OverlayTrigger, Tooltip } from "react-bootstrap";
@@ -308,10 +308,9 @@ const Sidebar = () => {
                 {renderNavItem("/MasterCity", <FaBuilding />, "Cities")}
                 {renderNavItem("/ReligionList", <FaFlag />, "ReligionList")}
                 {renderNavItem("/CasteList", <FaGlobe />, "CasteList")}
-                {renderNavItem("/DocumentTypeList", <FaGlobe />, "DocumentTypeList")}
                 {renderNavItem("/StatusList", <FaMapMarkedAlt />, "StatusList")}
-                {renderNavItem("/DocumentTypeList", <FaGlobe />, "DocumentTypeList")}
-                {renderNavItem("/StatusList", <FaMapMarkedAlt />, "StatusList")}
+                {renderNavItem("/DocumentTypeList", <FaFileAlt />, "DocumentTypeList")}
+                {renderNavItem("/AdmissionCategoryList", <FaQuestionCircle />, "AdmissionCategoryList")}
               </ul>
             )}
           </li>

@@ -26,6 +26,7 @@ import ReligionList from './MasterComponent/Masters_Students/ReligionList';
 import CasteList from './MasterComponent/Masters_Students/CasteList';
 import DocumentTypeList from './MasterComponent/Masters_Students/DocumentTypeList';
 import StatusList from './MasterComponent/Masters_Students/StatusList';
+import AdmissionCategoryList from './MasterComponent/Masters_Students/AdmissionCategoryList';
 
 
 import Dashboard from './componets/Dashboardscomponets/Dashboard'
@@ -61,7 +62,7 @@ const AppRoutes = () => (
         <Route path="/CasteList" element={<CasteList />} />
         <Route path="/DocumentTypeList" element={<DocumentTypeList />} />
         <Route path="/StatusList" element={<StatusList />} />
-
+        <Route path="/AdmissionCategoryList" element={<AdmissionCategoryList />} />
 
 
 
